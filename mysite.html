@@ -1,0 +1,223 @@
+
+#### Raphi hat einen kleinen Penis
+
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Free Web tutorials">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="author" content="Chi">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="mycss.css">
+            <script src="myscripts.js"></script>
+
+        </head>
+        <body>
+            <div id="header">
+
+                <button class="sidebar" onclick="togglePopupMenu()">Sidebar</button>
+
+
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search">
+                    <button id="search-btn">GO!</button>
+                  </div>
+                  <div id="hashtag-container"></div>
+
+                <div id="popup-menu">
+                    <ul>
+                      <li><a href="#">Games</a></li>
+                      <li><a href="#">Programs</a></li>
+                    </ul>
+                  </div>
+                  
+            </div>
+
+            <div  id="button-array">  
+                <button id="game1" class="download-button"></button>
+                <button id="game2" class="download-button"></button>
+                <button id="game3" class="download-button"></button>
+                <button id="game4" class="download-button"></button>
+                <button id="game5" class="download-button"></button>
+                <button id="game6" class="download-button"></button>
+                <button id="game7" class="download-button"></button>
+                <button id="game8" class="download-button"></button>
+                <button id="game9" class="download-button"></button>
+                <button id="game10" class="download-button"></button>
+                <button id="game11" class="download-button"></button>
+                <button id="game12" class="download-button"></button>
+                <button id="game13" class="download-button"></button>
+                <button id="game14" class="download-button"></button>
+                <button id="game15" class="download-button"></button>
+                <button id="game16" class="download-button"></button>
+                <button id="game17" class="download-button"></button>
+                <button id="game18" class="download-button"></button>
+                <button id="game19" class="download-button"></button>
+                <button id="game20" class="download-button"></button>
+                <button id="game21" class="download-button"></button>
+                <button id="game22" class="download-button"></button>
+                <button id="game23" class="download-button"></button>
+                <button id="game24" class="download-button"></button>
+                <button id="game25" class="download-button"></button>
+                <button id="game26" class="download-button"></button>
+                <button id="game27" class="download-button"></button>
+                <button id="game28" class="download-button"></button>
+                <button id="game29" class="download-button"></button>
+                <button id="game30" class="download-button"></button>
+                <button id="game31" class="download-button"></button>
+                <button id="game32" class="download-button"></button>
+                <button id="game33" class="download-button"></button>
+                <button id="game34" class="download-button"></button>
+                <button id="game35" class="download-button"></button>
+                <button id="game36" class="download-button"></button>
+                <button id="game37" class="download-button"></button>
+                <button id="game38" class="download-button"></button>
+                <button id="game39" class="download-button"></button>
+                <button id="game40" class="download-button"></button>
+                <button id="game41" class="download-button"></button>
+                <button id="game42" class="download-button"></button>
+
+            </div>  
+
+            
+        <style>
+            
+                body {
+        background-image: url(http://192.168.0.6:8385/Server_bg_hn.jpg)
+                }
+
+                .download-button {
+        padding: 10px 20px;
+                
+        
+        width: 300px;
+        height: 400px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+                .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+}
+
+        input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 50%;
+        margin-right: 10px;
+}
+
+                button {
+        padding: 10px 20px;
+        background-color: lightblue;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        opacity: 85%;
+}
+
+                button:hover {
+        opacity: 100%;
+                }
+
+
+.hashtag {
+  background-color: rgba(110, 110, 110, 0.250);
+  color: #abdbe3;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-block;
+}
+
+                
+                #popup-menu {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+}
+
+                #popup-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+}
+
+        </style>
+
+        <script>
+        
+        
+            
+        // Sidebar
+
+        function togglePopupMenu() {
+            var popup = document.getElementById("popup-menu");
+            if (popup.style.display === "block") {
+            popup.style.display = "none";
+            } else {
+            popup.style.display = "block";
+            }
+
+        // Hashtags
+        }
+        const searchInput = document.getElementById("search-input");
+        const searchBtn = document.getElementById("search-btn");
+        const hashtagContainer = document.getElementById("hashtag-container");
+
+        searchBtn.addEventListener("click", function() {
+        const searchValue = searchInput.value;
+        const hashtag = `<span class="hashtag">#${searchValue}</span>`;
+        hashtagContainer.innerHTML += hashtag;
+        });
+
+        import { urlsArray } from "./myscripts.js";
+
+        const urls = urlsArray;
+
+        
+         
+        
+
+
+    
+    // appends the download link to the clicked button 
+    
+    function downloadFile(id) {
+        const url = urls[id];
+         const link = document.createElement("a");
+        link.href = url;
+        link.download = id + ".zip";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        }
+    
+        // downloads the linked file 
+        const buttons = document.getElementsByClassName("download-button");
+        for (const button of buttons) {
+        button.addEventListener("click", () => {
+        downloadFile(button.id);
+        });
+        }
+            
+
+
+
+            </script>
+        </body>
+    </html>
